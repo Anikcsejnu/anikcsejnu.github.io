@@ -138,10 +138,11 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
-.hamburger-icon span:nth-child(2) {
+
+.hamburger-icon span:first-child {
   opacity: 1;
 }
-.hamburger-icon span:last-child {
+
+.hamburger-icon span:first-child {
   transform: none;
 }
-
