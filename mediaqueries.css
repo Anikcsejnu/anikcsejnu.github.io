@@ -1,13 +1,18 @@
-@media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
+@media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
     }
-    #hamburger-nav {
-        display: flex;
+    .about-containers {
+      flex-wrap: wrap;
     }
-}
-
-@media screen and (max-width: 1200px) {
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
     #desktop-nav {
       display: none;
     }
@@ -41,7 +46,7 @@
       margin-top: 0;
     }
   }
-
+  
   @media screen and (max-width: 600px) {
     #contact,
     footer {
