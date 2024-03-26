@@ -149,8 +149,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 10vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -331,7 +330,7 @@ section {
 .experience-details-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .article-container {
