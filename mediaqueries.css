@@ -1,104 +1,74 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
-  }
-  
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
-  }
-  
+/* ─── TABLET (≤ 1024px) ─── */
+@media (max-width: 1024px) {
+  .hero-container { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
+  .hero-content { order: 1; }
+  .hero-image  { order: 2; }
+  .hero-desc   { margin: 0 auto 2rem; }
+  .hero-actions, .hero-socials { justify-content: center; }
+  .badge-1 { right: 0; top: 5%; }
+  .badge-2 { left: 0; bottom: 5%; }
+  .image-ring { width: 300px; height: 300px; }
+
+  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .about-image-col { display: flex; justify-content: center; }
+  .about-img-wrap { max-width: 360px; }
+  .about-img-wrap img { height: 360px; }
+
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ─── MOBILE (≤ 768px) ─── */
+@media (max-width: 768px) {
+  /* Nav */
+  .nav, .btn-resume { display: none; }
+  .hamburger { display: flex; }
+
+  /* Hero */
+  .hero { padding: 7rem 1.5rem 4rem; }
+  .image-ring { width: 260px; height: 260px; }
+  .hero-badge { display: none; }
+  .hero-name { font-size: 2.2rem; }
+
+  /* Sections */
+  .section { padding: 4rem 1.5rem; }
+  .section-title { font-size: 1.9rem; }
+
+  /* About */
+  .stat-cards { gap: .75rem; }
+  .stat-card { padding: 1rem .75rem; }
+  .stat-number { font-size: 1.4rem; }
+  .about-actions { flex-direction: column; }
+
+  /* Skills */
+  .skills-grid { grid-template-columns: 1fr; gap: 1rem; }
+
+  /* Experience timeline */
+  .timeline::before { left: 12px; }
+  .timeline-item { padding-left: 44px; }
+  .timeline-dot { left: 4px; width: 16px; height: 16px; }
+  .timeline-header { flex-direction: column; gap: .5rem; }
+  .tl-period { align-self: flex-start; }
+
+  /* Projects */
+  .projects-grid { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-card { flex-direction: column; text-align: center; gap: .75rem; }
+  .contact-arrow { display: none; }
+
+  /* Footer */
+  .footer-nav { gap: 1rem; }
+}
+
+/* ─── SMALL MOBILE (≤ 480px) ─── */
+@media (max-width: 480px) {
+  .hero-name { font-size: 1.9rem; }
+  .hero-actions { flex-direction: column; width: 100%; }
+  .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+  .stat-cards { flex-direction: column; }
+  .about-actions { flex-direction: column; }
+  .btn-primary, .btn-outline { width: 100%; text-align: center; justify-content: center; }
+  .nav-container { padding: 1rem 1.25rem; }
+}
