@@ -3,502 +3,444 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohammad Atikur Rhaman</title>
+    <title>Mohammad Atikur Rhaman — Software Engineer</title>
+    <meta name="description" content="Software Engineer with 4+ years building robust, scalable systems." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Mohammad Atikur Rhaman</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
+
+    <!-- ───── HEADER ───── -->
+    <header class="header" id="header">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <span class="logo-bracket">&lt;</span>Atikur<span class="logo-bracket">/&gt;</span>
+        </a>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li><a href="#about"      class="nav-link">About</a></li>
+            <li><a href="#skills"     class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects"   class="nav-link">Projects</a></li>
+            <li><a href="#contact"    class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="./assets/Mohammad_Atikur_Rhaman_CV.pdf" class="btn-resume" target="_blank" rel="noopener">Resume ↗</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <ul>
+          <li><a href="#about"      class="mobile-link">About</a></li>
+          <li><a href="#skills"     class="mobile-link">Skills</a></li>
+          <li><a href="#experience" class="mobile-link">Experience</a></li>
+          <li><a href="#projects"   class="mobile-link">Projects</a></li>
+          <li><a href="#contact"    class="mobile-link">Contact</a></li>
+          <li><a href="./assets/Mohammad_Atikur_Rhaman_CV.pdf" class="mobile-link" target="_blank" rel="noopener">Resume ↗</a></li>
         </ul>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Mohammad Atikur Rhaman</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    </header>
+
+    <!-- ───── HERO ───── -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-content fade-up">
+          <span class="hero-tag">Available for opportunities</span>
+          <h1 class="hero-name">
+            Mohammad Atikur<br />
+            <span class="gradient-text">Rhaman</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </p>
+          <p class="hero-desc">
+            Software Engineer with 6+ years of experience crafting robust, scalable
+            applications using <strong>.NET</strong>, <strong>C#</strong>, and modern backend technologies.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View My Work</a>
+            <a href="#contact"  class="btn-outline">Get in Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/anikcsejnu" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/atikurrhaman" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
+            </a>
+            <a href="mailto:atikur.rhaman.cs@gmail.com" aria-label="Email" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="hero-image fade-up delay-2">
+          <div class="image-ring">
+            <div class="image-glow"></div>
+            <img src="./assets/profile-pic.png" alt="Mohammad Atikur Rhaman" class="profile-photo" />
+          </div>
+          <div class="hero-badge badge-1">
+            <span class="badge-icon">💼</span>
+            <div><strong>4+ Years</strong><small>Experience</small></div>
+          </div>
+          <div class="hero-badge badge-2">
+            <span class="badge-icon">🚀</span>
+            <div><strong>.NET / C#</strong><small>Expert</small></div>
+          </div>
         </div>
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./assets/profile-pic.png"
-          alt="Mohammad Atikur Rhaman Profile pic"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello I'm</p>
-        <h1 class="title">Mohammad Atikur Rhaman</h1>
-        <p class="section__text__p2">Software Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Mohammad_Atikur_Rhaman_CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      </a>
+    </section>
+
+    <!-- ───── ABOUT ───── -->
+    <section id="about" class="section about reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My linkedin profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/atikurrhaman'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My github profile"
-            class="icon"
-            onclick="location.href='https://github.com/anikcsejnu'"
-          />
+        <div class="about-grid">
+          <div class="about-image-col">
+            <div class="about-img-wrap">
+              <img src="./assets/about-pic.png" alt="About Mohammad Atikur Rhaman" />
+              <div class="about-img-decoration"></div>
+            </div>
+          </div>
+          <div class="about-content-col">
+            <div class="stat-cards">
+              <div class="stat-card">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">B.Sc.</span>
+                <span class="stat-label">CSE Degree</span>
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+                I'm a passionate <strong>Software Engineer</strong> based in Bangladesh, specializing in
+                building high-performance backend systems and enterprise applications. With over 6 years
+                of hands-on experience, I thrive at solving complex problems and delivering clean,
+                maintainable solutions.
+              </p>
+              <p>
+                My core stack includes <strong>C#</strong>, <strong>.NET</strong>, and <strong>SQL Server</strong>,
+                with solid expertise across multiple programming languages including Go, Python, and C++.
+                I hold a Bachelor's degree in Computer Science &amp; Engineering and continuously
+                sharpen my skills across the full software development lifecycle.
+              </p>
+            </div>
+            <div class="about-actions">
+              <a href="./assets/Mohammad_Atikur_Rhaman_CV.pdf" class="btn-primary" target="_blank" rel="noopener">Download CV</a>
+              <a href="#contact" class="btn-outline">Let's Connect</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+
+    <!-- ───── SKILLS ───── -->
+    <section id="skills" class="section skills reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">What I Work With</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>4+ years <br />Software Engineering</p>
+        <div class="skills-grid">
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">⚙️</span>
+              <h3>Programming Languages</h3>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />Computer Science & Engineering</p>
+            <div class="skill-tags">
+              <span class="skill-tag level-expert">C#</span>
+              <span class="skill-tag level-expert">C / C++</span>
+              <span class="skill-tag level-mid">Python</span>
+              <span class="skill-tag level-mid">Go</span>
+              <span class="skill-tag level-mid">Pascal</span>
             </div>
           </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🖥️</span>
+              <h3>Backend Frameworks</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag level-expert">.NET / ASP.NET</span>
+              <span class="skill-tag level-mid">Django</span>
+              <span class="skill-tag level-mid">Gin (Go)</span>
+              <span class="skill-tag level-mid">Delphi</span>
+              <span class="skill-tag level-basic">Express.js</span>
+            </div>
           </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🌐</span>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag level-mid">HTML5</span>
+              <span class="skill-tag level-mid">CSS3</span>
+              <span class="skill-tag level-mid">JavaScript</span>
+              <span class="skill-tag level-mid">Qt</span>
+              <span class="skill-tag level-basic">Next.js</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🗄️</span>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag level-expert">SQL Server</span>
+              <span class="skill-tag level-mid">MySQL</span>
+              <span class="skill-tag level-mid">PostgreSQL</span>
+              <span class="skill-tag level-basic">MongoDB</span>
+              <span class="skill-tag level-basic">SQLite</span>
+            </div>
+          </div>
+
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>QT</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Next JS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming Language</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C, C++</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Go</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PASCAL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend <br> Frameworks</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>.NET</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>DJango</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>DELPHI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GIN</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Serverend Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL Server</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MY SQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL Lite</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:atikur.rhaman.cs@gmail.com">atikur.rhaman.cs@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/atikurrhaman">LinkedIn</a></p>
+        <div class="skill-legend">
+          <span><span class="dot dot-expert"></span> Expert</span>
+          <span><span class="dot dot-mid"></span> Intermediate</span>
+          <span><span class="dot dot-basic"></span> Familiar</span>
         </div>
       </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+    <!-- ───── EXPERIENCE ───── -->
+    <section id="experience" class="section experience reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">My Journey</span>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
         </div>
-      </nav>
-      <p>Copyright &#169; 2024 <b>Mohammad Atikur Rhaman</b>. All Rights Reserved.</p>
+        <div class="timeline">
+
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="tl-role">Software Engineer</h3>
+                  <p class="tl-company">Software Development Industry</p>
+                </div>
+                <span class="tl-period">2019 — Present</span>
+              </div>
+              <ul class="tl-points">
+                <li>Designed and developed enterprise-grade applications with <strong>C#</strong> and <strong>ASP.NET</strong>, improving system performance and reliability.</li>
+                <li>Architected and maintained relational database schemas in <strong>SQL Server</strong>; optimized complex queries reducing load times significantly.</li>
+                <li>Built RESTful APIs consumed by both internal tools and external clients, following clean architecture principles.</li>
+                <li>Collaborated in cross-functional teams applying Agile methodologies to deliver projects on schedule.</li>
+              </ul>
+              <div class="tl-tags">
+                <span>C#</span><span>.NET</span><span>SQL Server</span><span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="tl-role">B.Sc. Computer Science &amp; Engineering</h3>
+                  <p class="tl-company">Jahangirnagar University, Dhaka</p>
+                </div>
+                <span class="tl-period">2015 — 2020</span>
+              </div>
+              <ul class="tl-points">
+                <li>Completed a four-year undergraduate programme with a focus on algorithms, data structures, and software engineering.</li>
+                <li>Gained foundational expertise in C, C++, Pascal and database management systems.</li>
+                <li>Participated in competitive programming and software development projects throughout the degree.</li>
+              </ul>
+              <div class="tl-tags">
+                <span>C / C++</span><span>Data Structures</span><span>Algorithms</span><span>DBMS</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── PROJECTS ───── -->
+    <section id="projects" class="section projects reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">What I've Built</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        </div>
+        <div class="projects-grid">
+
+          <div class="project-card reveal-item">
+            <div class="project-image">
+              <img src="./assets/project-1.png" alt="Project 1" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/anikcsejnu" target="_blank" rel="noopener" class="proj-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                  <a href="#" class="proj-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Project One</h3>
+              <p class="project-desc">A full-featured application built with C# and .NET showcasing backend API design and database integration.</p>
+              <div class="project-tech">
+                <span>C#</span><span>.NET</span><span>SQL Server</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal-item">
+            <div class="project-image">
+              <img src="./assets/project-2.png" alt="Project 2" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/anikcsejnu" target="_blank" rel="noopener" class="proj-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                  <a href="#" class="proj-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Project Two</h3>
+              <p class="project-desc">A data-driven web application using Python/Django with PostgreSQL, featuring real-time updates and responsive UI.</p>
+              <div class="project-tech">
+                <span>Python</span><span>Django</span><span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal-item">
+            <div class="project-image">
+              <img src="./assets/project-3.png" alt="Project 3" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/anikcsejnu" target="_blank" rel="noopener" class="proj-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                  <a href="#" class="proj-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Project Three</h3>
+              <p class="project-desc">A high-performance microservice built with Go and Gin, handling concurrent requests with clean REST endpoints.</p>
+              <div class="project-tech">
+                <span>Go</span><span>Gin</span><span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="projects-cta">
+          <a href="https://github.com/anikcsejnu" target="_blank" rel="noopener" class="btn-outline">
+            View All on GitHub ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── CONTACT ───── -->
+    <section id="contact" class="section contact reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">Let's Talk</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        </div>
+        <p class="contact-intro">
+          I'm open to new opportunities, collaborations, and interesting conversations.
+          Drop me a message and I'll get back to you as soon as possible.
+        </p>
+        <div class="contact-cards">
+          <a href="mailto:atikur.rhaman.cs@gmail.com" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">atikur.rhaman.cs@gmail.com</span>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/atikurrhaman" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">linkedin.com/in/atikurrhaman</span>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://github.com/anikcsejnu" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">github.com/anikcsejnu</span>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── FOOTER ───── -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <a href="#home" class="logo">
+          <span class="logo-bracket">&lt;</span>Atikur<span class="logo-bracket">/&gt;</span>
+        </a>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2024 <strong>Mohammad Atikur Rhaman</strong>. All rights reserved.
+        </p>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
