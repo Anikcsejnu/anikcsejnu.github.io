@@ -5,80 +5,68 @@ window.addEventListener('scroll', () => {
 });
 
 /* ─── HAMBURGER ─── */
-const hamburger   = document.getElementById('hamburger');
-const mobileMenu  = document.getElementById('mobile-menu');
-
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
 hamburger.addEventListener('click', () => {
-  const open = mobileMenu.classList.toggle('open');
-  hamburger.classList.toggle('open', open);
+  const open = hamburger.classList.toggle('open');
   hamburger.setAttribute('aria-expanded', open);
+  mobileMenu.classList.toggle('open', open);
   mobileMenu.setAttribute('aria-hidden', !open);
-  document.body.style.overflow = open ? 'hidden' : '';
 });
-
-document.querySelectorAll('.mobile-link').forEach(link => {
+mobileMenu.querySelectorAll('.mob-link').forEach(link => {
   link.addEventListener('click', () => {
-    mobileMenu.classList.remove('open');
     hamburger.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', 'false');
-    mobileMenu.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
+    hamburger.setAttribute('aria-expanded', false);
+    mobileMenu.classList.remove('open');
+    mobileMenu.setAttribute('aria-hidden', true);
   });
 });
 
 /* ─── TYPING ANIMATION ─── */
 const phrases = [
-  'Software Engineer',
   '.NET / C# Developer',
   'Backend Specialist',
-  'Problem Solver',
+  'Software Engineer',
+  'API Architect',
+  'Problem Solver'
 ];
+let pIdx = 0, cIdx = 0, deleting = false;
 const typedEl = document.getElementById('typed-text');
-let phraseIdx = 0, charIdx = 0, deleting = false;
-
 function type() {
-  const current = phrases[phraseIdx];
-  if (!deleting) {
-    typedEl.textContent = current.slice(0, ++charIdx);
-    if (charIdx === current.length) {
-      deleting = true;
-      setTimeout(type, 1800);
-      return;
-    }
+  const phrase = phrases[pIdx];
+  if (deleting) {
+    typedEl.textContent = phrase.slice(0, --cIdx);
+    if (cIdx === 0) { deleting = false; pIdx = (pIdx + 1) % phrases.length; }
+    setTimeout(type, 60);
   } else {
-    typedEl.textContent = current.slice(0, --charIdx);
-    if (charIdx === 0) {
-      deleting = false;
-      phraseIdx = (phraseIdx + 1) % phrases.length;
+    typedEl.textContent = phrase.slice(0, ++cIdx);
+    if (cIdx === phrase.length) {
+      deleting = true;
+      setTimeout(type, 2000);
+    } else {
+      setTimeout(type, 100);
     }
   }
-  setTimeout(type, deleting ? 50 : 80);
 }
-type();
+setTimeout(type, 500);
 
 /* ─── SCROLL REVEAL ─── */
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+const revealEls = document.querySelectorAll('.reveal, .reveal-item');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-document.querySelectorAll('.reveal, .reveal-item').forEach(el => revealObserver.observe(el));
+}, { threshold: 0.12 });
+revealEls.forEach(el => io.observe(el));
 
 /* ─── ACTIVE NAV LINK ─── */
-const sections  = document.querySelectorAll('section[id]');
-const navLinks  = document.querySelectorAll('.nav-link');
-
-const navObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => link.classList.remove('active'));
-      const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
-      if (active) active.classList.add('active');
+const sections = document.querySelectorAll('section[id], .contact-section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === `#${e.target.id}`));
     }
   });
-}, { threshold: 0.4 });
-
-sections.forEach(sec => navObserver.observe(sec));
+}, { rootMargin: '-40% 0px -55% 0px' });
+sections.forEach(s => sectionObserver.observe(s));
