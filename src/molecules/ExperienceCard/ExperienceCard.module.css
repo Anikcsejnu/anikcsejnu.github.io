@@ -1,0 +1,95 @@
+.card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 40px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+}
+.card:last-child {
+  border-bottom: none;
+}
+.logoWrap {
+  padding-top: 4px;
+}
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.role {
+  font-family: var(--ff-disp);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+.company {
+  font-size: 0.875rem;
+  color: var(--lime);
+  font-weight: 500;
+}
+.period {
+  font-size: 0.8125rem;
+  color: var(--gray);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+.points {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.points li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--gray);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+.points li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--lime);
+  font-weight: 700;
+}
+.points li strong {
+  color: var(--white);
+}
+.points li a {
+  color: var(--lime);
+  text-decoration: underline;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    grid-template-columns: 60px 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .logoWrap {
+    display: none;
+  }
+  .meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .period {
+    margin-top: 0;
+  }
+}

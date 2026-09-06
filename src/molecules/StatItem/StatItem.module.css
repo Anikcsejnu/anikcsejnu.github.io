@@ -1,0 +1,17 @@
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+.number {
+  font-family: var(--ff-disp);
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: var(--lime);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.label {
+  font-size: 0.8125rem;
+  color: var(--gray);
+  letter-spacing: 0.02em;
+}

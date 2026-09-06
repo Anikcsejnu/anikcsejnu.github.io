@@ -1,0 +1,10 @@
+.projects {
+  border-bottom: 1px solid var(--border);
+}
+.list {
+  border-top: 1px solid var(--border);
+  margin-bottom: 60px;
+}
+.cta {
+  text-align: center;
+}

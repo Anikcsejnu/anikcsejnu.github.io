@@ -1,0 +1,47 @@
+.lime {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 28px;
+  background: var(--lime);
+  color: var(--bg);
+  font-family: var(--ff-body);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+.lime:hover {
+  opacity: 0.85;
+}
+
+.ghost {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 28px;
+  border: 1px solid var(--border2);
+  color: var(--white);
+  font-family: var(--ff-body);
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  background: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.ghost:hover {
+  border-color: var(--white);
+}
+
+.resume {
+  font-family: var(--ff-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 8px 20px;
+  border: 1px solid var(--lime);
+  color: var(--lime);
+  transition: background 0.2s, color 0.2s;
+}
+.resume:hover {
+  background: var(--lime);
+  color: var(--bg);
+}
