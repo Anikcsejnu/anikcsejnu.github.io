@@ -10,11 +10,13 @@
 .heading {
   font-family: var(--ff-disp);
   font-weight: 800;
-  font-size: clamp(3rem, 7vw, 7rem);
+  font-size: clamp(2.5rem, 6vw, 6rem);
   line-height: 0.95;
   letter-spacing: -0.02em;
   color: var(--bg);
   margin-bottom: 32px;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 .sub {
   font-size: 1.0625rem;

@@ -22,7 +22,7 @@ export default function About() {
               clean code.
             </h2>
           </div>
-          <div>
+          <div className={styles.right}>
             <div className={styles.statRow}>
               {STATS.map((stat) => (
                 <StatItem key={stat.label} number={stat.number} label={stat.label} />

@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section id="home" className={styles.hero}>
       <div className={styles.inner}>
-        <div>
+        <div className={styles.textSide}>
           <span className={styles.eyebrow}>Software Engineer · Bangladesh</span>
           <h1 className={styles.name}>
             <span className={styles.nameLine}>Mohammad</span>

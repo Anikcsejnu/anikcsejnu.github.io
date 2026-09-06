@@ -24,6 +24,8 @@
   line-height: 1.05;
   letter-spacing: -0.02em;
   margin-bottom: 64px;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 .sectionHeading em {
   font-style: italic;

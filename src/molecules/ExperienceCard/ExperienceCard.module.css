@@ -1,6 +1,6 @@
 .card {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 80px minmax(0, 1fr);
   gap: 40px;
   padding: 40px 0;
   border-bottom: 1px solid var(--border);
@@ -11,12 +11,18 @@
 .logoWrap {
   padding-top: 4px;
 }
+.body {
+  min-width: 0;
+}
 .meta {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 16px;
   margin-bottom: 20px;
+}
+.titleGroup {
+  min-width: 0;
 }
 .role {
   font-family: var(--ff-disp);
