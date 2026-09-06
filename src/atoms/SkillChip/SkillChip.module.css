@@ -1,0 +1,19 @@
+.chip {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border: 1px solid transparent;
+  letter-spacing: 0.02em;
+}
+.expert {
+  border-color: var(--lime);
+  color: var(--lime);
+}
+.mid {
+  border-color: var(--border2);
+  color: var(--white);
+}
+.basic {
+  border-color: var(--border);
+  color: var(--gray);
+}

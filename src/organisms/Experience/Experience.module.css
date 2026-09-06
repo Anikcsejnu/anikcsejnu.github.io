@@ -1,0 +1,9 @@
+.experience {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

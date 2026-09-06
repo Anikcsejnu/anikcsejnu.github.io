@@ -1,0 +1,31 @@
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-left: auto;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  transition: transform 0.25s, opacity 0.25s;
+}
+.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.open span:nth-child(2) {
+  opacity: 0;
+}
+.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}

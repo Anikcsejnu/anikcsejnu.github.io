@@ -1,0 +1,31 @@
+.menu {
+  display: none;
+  flex-direction: column;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+}
+.open {
+  max-height: 400px;
+}
+.link {
+  display: block;
+  padding: 16px 40px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--gray);
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s, background 0.2s;
+}
+.link:hover {
+  color: var(--lime);
+  background: var(--surface);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}

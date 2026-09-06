@@ -1,0 +1,36 @@
+.contact {
+  background: var(--white);
+  color: var(--bg);
+  padding: 120px 40px;
+}
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.heading {
+  font-family: var(--ff-disp);
+  font-weight: 800;
+  font-size: clamp(3rem, 7vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--bg);
+  margin-bottom: 32px;
+}
+.sub {
+  font-size: 1.0625rem;
+  color: var(--gray2);
+  margin-bottom: 64px;
+  max-width: 480px;
+}
+.links {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 24px;
+  }
+  .heading {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+}
