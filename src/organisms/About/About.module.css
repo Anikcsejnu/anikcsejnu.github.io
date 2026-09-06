@@ -5,9 +5,13 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
   gap: 80px;
   align-items: start;
+}
+.left,
+.right {
+  min-width: 0;
 }
 .left .heading {
   margin-bottom: 0;

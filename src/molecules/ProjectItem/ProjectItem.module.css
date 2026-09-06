@@ -1,6 +1,6 @@
 .item {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 80px minmax(0, 1fr);
   gap: 40px;
   padding: 48px 0;
   border-bottom: 1px solid var(--border);
@@ -16,15 +16,19 @@
 }
 .content {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 40px;
   align-items: start;
+}
+.info {
+  min-width: 0;
 }
 .title {
   font-family: var(--ff-disp);
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 12px;
+  overflow-wrap: break-word;
 }
 .desc {
   color: var(--gray);

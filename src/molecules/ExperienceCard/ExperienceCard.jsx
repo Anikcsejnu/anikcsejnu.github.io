@@ -8,9 +8,9 @@ export default function ExperienceCard({ role, company, period, logo, points, ta
       <div className={styles.logoWrap}>
         <ExperienceLogo bg={logo.bg} fg={logo.fg} text={logo.text} />
       </div>
-      <div>
+      <div className={styles.body}>
         <div className={styles.meta}>
-          <div>
+          <div className={styles.titleGroup}>
             <h3 className={styles.role}>{role}</h3>
             <p className={styles.company}>{company}</p>
           </div>
