@@ -1,6 +1,14 @@
 import styles from './ExperienceLogo.module.css';
 
-export default function ExperienceLogo({ bg, fg, text }) {
+export default function ExperienceLogo({ image, alt, bg, fg, text }) {
+  if (image) {
+    return (
+      <div className={styles.logo} style={{ background: bg || '#ffffff' }}>
+        <img src={image} alt={alt} />
+      </div>
+    );
+  }
+
   return (
     <div className={styles.logo}>
       <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">

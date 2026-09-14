@@ -38,7 +38,7 @@ export default function About() {
               My core stack includes <strong>C#</strong>, <strong>.NET / ASP.NET</strong>, and{' '}
               <strong>SQL Server</strong>. I also work with Go, Python, and C++ across the full
               software development lifecycle. I hold a Bachelor of Science in Computer Science &
-              Engineering from Jahangirnagar University.
+              Engineering from Jagannath University.
             </p>
             <div className={styles.cta}>
               <Button href={RESUME_URL} external>

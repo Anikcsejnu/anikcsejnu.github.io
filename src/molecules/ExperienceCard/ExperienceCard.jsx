@@ -6,7 +6,7 @@ export default function ExperienceCard({ role, company, period, logo, points, ta
   return (
     <div className={styles.card}>
       <div className={styles.logoWrap}>
-        <ExperienceLogo bg={logo.bg} fg={logo.fg} text={logo.text} />
+        <ExperienceLogo image={logo.image} alt={logo.alt} bg={logo.bg} fg={logo.fg} text={logo.text} />
       </div>
       <div className={styles.body}>
         <div className={styles.meta}>
