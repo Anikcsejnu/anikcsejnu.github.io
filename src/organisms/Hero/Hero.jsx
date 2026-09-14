@@ -4,10 +4,10 @@ import TypedText from '../../molecules/TypedText/TypedText';
 import styles from './Hero.module.css';
 
 const TYPED_PHRASES = [
+  'Senior Software Developer',
+  'Optimizely CMS Engineer',
   '.NET / C# Developer',
-  'Backend Specialist',
-  'Software Engineer',
-  'API Architect',
+  'React Developer',
   'Problem Solver',
 ];
 
@@ -16,7 +16,7 @@ export default function Hero() {
     <section id="home" className={styles.hero}>
       <div className={styles.inner}>
         <div className={styles.textSide}>
-          <span className={styles.eyebrow}>Software Engineer · Bangladesh</span>
+          <span className={styles.eyebrow}>Senior Software Developer · Bangladesh</span>
           <h1 className={styles.name}>
             <span className={styles.nameLine}>Mohammad</span>
             <span className={`${styles.nameLine} ${styles.nameAccent}`}>Atikur</span>
@@ -24,8 +24,9 @@ export default function Hero() {
           </h1>
           <TypedText phrases={TYPED_PHRASES} className={styles.role} />
           <p className={styles.bio}>
-            6+ years crafting high-performance backend systems and enterprise applications.
-            Specialising in <strong>.NET</strong>, <strong>C#</strong>, and scalable API architecture.
+            6+ years designing, building, and optimizing scalable desktop and web applications
+            across the full stack. Skilled in <strong>.NET / C#</strong>, <strong>React</strong>,
+            Python, and C++.
           </p>
           <div className={styles.cta}>
             <Button href="#projects">View Work</Button>
