@@ -29,16 +29,17 @@ export default function About() {
               ))}
             </div>
             <p className={styles.paragraph}>
-              I'm a passionate Software Engineer based in Bangladesh, specialising in
-              high-performance backend systems and enterprise applications. With over 6 years
-              of hands-on experience I thrive on solving complex problems and delivering
-              clean, maintainable solutions.
+              I'm a Senior Software Developer based in Bangladesh, currently building{' '}
+              <strong>Optimizely CMS</strong> solutions. With over 6 years of experience designing,
+              building, and optimizing scalable desktop and web applications, I have a proven track
+              record leading feature development, mentoring engineering teams, and improving system
+              performance — including a 50–70% database query efficiency gain.
             </p>
             <p className={styles.paragraph}>
-              My core stack includes <strong>C#</strong>, <strong>.NET / ASP.NET</strong>, and{' '}
-              <strong>SQL Server</strong>. I also work with Go, Python, and C++ across the full
-              software development lifecycle. I hold a Bachelor of Science in Computer Science &
-              Engineering from Jahangirnagar University.
+              My core stack includes <strong>.NET / C#</strong>, <strong>React</strong>, Python, and{' '}
+              <strong>C++</strong>, with hands-on experience spanning CMS platforms, enterprise
+              desktop software, and cross-functional Agile teams. I hold a Bachelor of Science in
+              Computer Science &amp; Engineering from Jagannath University.
             </p>
             <div className={styles.cta}>
               <Button href={RESUME_URL} external>
