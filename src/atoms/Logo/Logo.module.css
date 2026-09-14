@@ -1,8 +1,11 @@
 .logo {
-  font-family: var(--ff-disp);
-  font-weight: 800;
-  font-size: 1.25rem;
-  letter-spacing: 0.05em;
-  color: var(--lime);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.mark {
+  display: block;
+  height: 32px;
+  width: auto;
   flex-shrink: 0;
 }

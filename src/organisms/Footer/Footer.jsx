@@ -14,7 +14,7 @@ export default function Footer() {
             </a>
           ))}
         </nav>
-        <p className={styles.copy}>&copy; 2024 Mohammad Atikur Rhaman</p>
+        <p className={styles.copy}>&copy; {new Date().getFullYear()} Mohammad Atikur Rhaman</p>
       </div>
     </footer>
   );
